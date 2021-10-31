@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kaktus-public.iml" filepath="$PROJECT_DIR$/.idea/modules/kaktus-public.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChipCloud/kaktus-public.ChipCloud.iml" filepath="$PROJECT_DIR$/.idea/modules/ChipCloud/kaktus-public.ChipCloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FlycoBannerLib/kaktus-public.FlycoBannerLib.iml" filepath="$PROJECT_DIR$/.idea/modules/FlycoBannerLib/kaktus-public.FlycoBannerLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MaterialAbout/kaktus-public.MaterialAbout.iml" filepath="$PROJECT_DIR$/.idea/modules/MaterialAbout/kaktus-public.MaterialAbout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MsvSearch/kaktus-public.MsvSearch.iml" filepath="$PROJECT_DIR$/.idea/modules/MsvSearch/kaktus-public.MsvSearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/YouTubePlayer/kaktus-public.YouTubePlayer.iml" filepath="$PROJECT_DIR$/.idea/modules/YouTubePlayer/kaktus-public.YouTubePlayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/kaktus-public.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/kaktus-public.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ratingdialog/kaktus-public.ratingdialog.iml" filepath="$PROJECT_DIR$/.idea/modules/ratingdialog/kaktus-public.ratingdialog.iml" />
+    </modules>
+  </component>
+</project>

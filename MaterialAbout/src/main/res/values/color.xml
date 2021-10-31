@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="stroke">#b4b4b4</color>
+    <color name="materialGrey300">#E0E0E0</color>
+    <color name="almost_black">#333333</color>
+</resources>

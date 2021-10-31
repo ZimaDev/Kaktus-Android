@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FFFFFF</color>
+    <color name="primaryDark">#000000</color>
+    <color name="accent">#4CAF50</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="almost_black">#333333</color>
+    <color name="whitePrimary">#FFFFFF</color>
+
+    <color name="materialBlue50">#E3F2FD</color>
+    <color name="materialBlue500">#2196F3</color>
+    <color name="materialGrey50">#FAFAFA</color>
+    <color name="materialGrey100">#F5F5F5</color>
+    <color name="materialGrey200">#EEEEEE</color>
+    <color name="materialGrey300">#E0E0E0</color>
+    <color name="materialGrey400">#BDBDBD</color>
+    <color name="materialGrey500">#9E9E9E</color>
+    <color name="materialGrey600">#757575</color>
+    <color name="materialGrey700">#616161</color>
+    <color name="materialGrey800">#424242</color>
+
+    <!--<color name="primary">#000000</color>-->
+    <color name="primary_dark">#000000</color>
+    <color name="primary_light">#C5CAE9</color>
+    <!--<color name="accent">#000000</color>-->
+    <color name="primary_text">#f59870</color>
+    <color name="secondary_text">#ffc6c6</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="background">#6163ce</color>
+    <color name="backgroundDark">#353554</color>
+
+    <color name="chip">#efefef</color>
+    <color name="chip_text">#666666</color>
+    <color name="colorSflPlaceholder">#8a000000</color>
+</resources>

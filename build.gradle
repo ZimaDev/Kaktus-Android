@@ -1,0 +1,33 @@
+buildscript {
+    apply from: "dependencies.gradle"
+
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath deps.plugins.gradle
+        classpath deps.plugins.kotlin
+        classpath deps.plugins.googleServices
+        classpath deps.plugins.crashlytics
+        // Надпись debug на иконке
+        classpath 'com.github.gfx.ribbonizer:ribbonizer-plugin:2.1.0'
+        // Material About
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+        // Method counting
+        classpath 'com.getkeepsafe.dexcount:dexcount-gradle-plugin:1.0.3'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+        mavenCentral()
+        google()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

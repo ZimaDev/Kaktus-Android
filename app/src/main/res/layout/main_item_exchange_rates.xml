@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/materialGrey200"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="5dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/exchange_rates_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:stretchColumns="*">
+
+                <TableRow android:paddingBottom="2dp">
+
+                    <TextView />
+
+                    <TextView
+                        android:id="@+id/usd_label_tv"
+                        android:text="USD" />
+
+                    <TextView
+                        android:id="@+id/eur_label_tv"
+                        android:text="EUR" />
+
+                    <TextView
+                        android:id="@+id/rub_label_tv"
+                        android:text="RUB" />
+
+                    <TextView
+                        android:id="@+id/kzt_label_tv"
+                        android:text="KZT" />
+                </TableRow>
+
+                <TableRow android:paddingBottom="2dp">
+
+                    <TextView
+                        android:id="@+id/buy_label_tv"
+                        android:text="Покупка" />
+
+                    <TextView
+                        android:id="@+id/usd_banks_buy_tv"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/eur_banks_buy_tv"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/rub_banks_buy_tv"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/kzt_banks_buy_tv"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow android:paddingBottom="2dp">
+
+                    <TextView
+                        android:id="@+id/sell_label_tv"
+                        android:text="Продажа" />
+
+                    <TextView
+                        android:id="@+id/usd_banks_sell_tv"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/eur_banks_sell_tv"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/rub_banks_sell_tv"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/kzt_banks_sell_tv"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/nbkr_label_tv"
+                        android:text="НБКР" />
+
+                    <TextView
+                        android:id="@+id/usd_nbkr_tv"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/eur_nbkr_tv"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/rub_nbkr_tv"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/kzt_nbkr_tv"
+                        android:text="" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:textSize="11sp"
+                android:id="@+id/kurs_label_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:paddingBottom="4dp"
+                android:paddingRight="4dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

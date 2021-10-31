@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:background="?android:colorBackground"
+    android:orientation="vertical">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/tags_cloud_flexbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingEnd="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        app:alignContent="space_around"
+        app:alignItems="flex_start"
+        app:dividerDrawable="@drawable/div"
+        app:flexWrap="wrap"
+        app:showDivider="middle" />
+</LinearLayout>

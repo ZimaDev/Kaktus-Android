@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Kaktus.media</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_search">Поиск</string>
+
+    <!--Для YouTube API-->
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+
+    <!--Подсказка для поиска-->
+    <string name="msv_search_hint">Поиск</string>
+    <string name="action_share">Поделиться</string>
+
+    <!--Для окна "О приложении"-->
+    <string name="more_apps">Больше приложений</string>
+
+    <string name="zanoza_email">pisma.kaktus@gmail.com</string>
+    <string name="kaktus_phone_formatted">+996 (312) 62–07–60</string>
+    <string name="kaktus_phone">+996312620760</string>
+    <string name="phone_label">Номер редакции Kaktus.Media</string>
+    <string name="email_label">Email редакции Занозы</string>
+    <string name="phone_copied">Телефон скопирован</string>
+    <string name="email_copied">Email скопирован</string>
+    <string name="load_more">Загрузить еще 20</string>
+    <string name="refresh">Обновить</string>
+    <string name="call">Позвонить</string>
+    <string name="copy">Скопировать</string>
+    <string name="contact_via_email">Написать</string>
+    <string name="vote">Голосовать</string>
+    <string name="show_results">Показать результаты</string>
+
+    <!--<string name="facebook_app_id">533844440341009</string>-->
+    <string name="facebook_app_id">300184107128470</string>
+
+    <string name="admob_app_unit_id">ca-app-pub-8825335149127599~9356166107</string>
+    <string name="admob_ad_unit_id">ca-app-pub-8825335149127599/8077731691</string>
+    <!--Statefull layout-->
+    <string name="sfl_default_placeholder_empty">Ничего нет</string>
+    <string name="sfl_default_placeholder_offline">Нет подключения к интернету</string>
+    <string name="sfl_retry">Обновить</string>
+    <string name="sfl_default_placeholder_error">Что-то пошло не так</string>
+    <string name="no_internet">Нет подключения к интернету</string>
+    <string name="one_more_to_exit">Нажмите еще раз для выхода</string>
+    <string name="server_error">Не удалось получить данные с сервера</string>
+    <string name="server_error_placeholder">Не удалось получить\nданные с сервера</string>
+    <string name="nothing_more">Больше ничего нет</string>
+    <string name="nothing_found">Ничего не найдено</string>
+    <string name="troubles_connecting_server">Проблемы при соединении с сервером</string>
+    <string name="troubles_connecting_server_placeholder">Проблемы при соединении\nс сервером</string>
+    <string name="choose_answer">Выберите вариант ответа</string>
+    <string name="no_such_article">Такой новости не существует</string>
+    <string name="wait_for_loading">Подождите, новость грузится</string>
+    <string name="thanks_for_the_feedback">Спасибо за отзыв</string>
+    <string name="data_retrieve_error">Ошибка получения данных</string>
+
+
+</resources>

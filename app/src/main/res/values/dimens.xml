@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+
+    <dimen name="quiz_strip_height">6dp</dimen>
+    <dimen name="quiz_strip_min_width">6dp</dimen>
+    <dimen name="quiz_dummy_view_size">8dp</dimen>
+
+    <dimen name="bulleted_text_bullet_radius">3dp</dimen>
+    <dimen name="bulleted_text_gap_width">8dp</dimen>
+
+    <!--Высота очень маленькой картинки-->
+    <dimen name="tiny_pic_height">16dp</dimen>
+    <!--Высота маленькой картинки-->
+    <dimen name="small_pic_height">64dp</dimen>
+
+    <dimen name="google_ad_width">280dp</dimen>
+    <dimen name="google_ad_height">100dp</dimen>
+</resources>

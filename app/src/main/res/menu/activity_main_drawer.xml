@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group_main"
+        android:checkableBehavior="single">
+
+        <!--<item
+            android:id="@+id/nav_actual"
+            android:icon="@drawable/ic_news"
+            android:title="Все новости" />
+
+        <item
+            android:id="@+id/nav_popular"
+            android:icon="@drawable/ic_crown"
+            android:title="Популярное за 3 дня" />-->
+
+        <item
+            android:id="@+id/nav_tabs"
+            android:icon="@drawable/ic_news"
+            android:title="Новости" />
+    </group>
+
+    <!--<group
+        android:id="@+id/extra"
+        android:checkableBehavior="single" >
+
+        <item
+            android:id="@+id/nav_call_center"
+            android:icon="@drawable/ic_call_center"
+            android:title="Call-центр" />
+    </group>-->
+
+    <group
+        android:checkableBehavior="single" >
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info"
+            android:title="О приложении" />
+    </group>
+
+    <!--<group
+        android:id="@+id/group_tags"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_guide"
+            android:icon="@drawable/ic_guide"
+            android:title="Гид" />
+        <item
+            android:id="@+id/nav_tv"
+            android:icon="@drawable/ic_tv"
+            android:title="ZANOZA-TV" />
+        <item
+            android:id="@+id/nav_children"
+            android:icon="@drawable/ic_children"
+            android:title="Дети" />
+        <item
+            android:id="@+id/nav_politics_rating"
+            android:icon="@drawable/ic_politics_rating"
+            android:title="Рейтинг политиков" />
+        <item
+            android:id="@+id/nav_call_center"
+            android:icon="@drawable/ic_call_center"
+            android:title="Call-центр" />
+    </group>
+
+    <group
+        android:id="@+id/group_partners"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_partners"
+            android:icon="@drawable/ic_partners"
+            android:title="Рекламодателям" />
+    </group>-->
+
+</menu>

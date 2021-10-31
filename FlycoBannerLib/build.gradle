@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+
+/* Changes by Ges Vitaly:
+- removed Android 2.x support;
+- added methods setCurrentPosition and getCurrentPosition;
+- some refactoring.
+- migrated to AndroidX */
+version = "2.0.2"
+android {
+    compileSdkVersion versions.sdk.compile
+
+    defaultConfig {
+        minSdkVersion versions.sdk.min
+        targetSdkVersion versions.sdk.target
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+}

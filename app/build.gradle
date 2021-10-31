@@ -1,0 +1,106 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+// Лента Debug на иконке
+apply plugin: 'com.github.gfx.ribbonizer'
+// Method counting
+apply plugin: 'com.getkeepsafe.dexcount'
+apply from: "${project.rootDir}/dependencies.gradle"
+apply from: "${project.rootDir}/signingConfigs.gradle"
+
+def apiKeysPropertiesFile = rootProject.file("apiKeys.properties")
+def apiKeysProperties = new Properties()
+apiKeysProperties.load(new FileInputStream(apiKeysPropertiesFile))
+
+android {
+    compileSdkVersion versions.sdk.compile
+
+    defaultConfig {
+        applicationId "kg.zima.gesvitaly.zanozakg"
+        minSdkVersion versions.sdk.min
+        targetSdkVersion versions.sdk.target
+        versionCode 45
+        versionName "1.2.4"
+        vectorDrawables.useSupportLibrary = true
+        buildConfigField("String", "YOUTUBE_API_KEY", apiKeysProperties['YOUTUBE_API_KEY'])
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.prod
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled true
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules-debug.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+
+    flavorDimensions "app"
+
+    productFlavors {
+        prod {
+            dimension "app"
+        }
+        dev {
+            dimension "app"
+            applicationIdSuffix ".dev"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation (deps.retrofit) {
+        exclude module: 'okhttp'
+    }
+    implementation deps.androidX.appcompat,
+            deps.androidX.material,
+            deps.androidX.cardview,
+            deps.androidX.recyclerview,
+            deps.androidX.percentlayout,
+            deps.androidX.constraintlayout,
+            deps.androidX.chromeCustomTabs,
+            deps.kotlin,
+            deps.firebase.crashlytics,
+            deps.firebase.analytics,
+            deps.glide,
+            deps.glideTransformations,
+            deps.okhttp,
+            deps.gson,
+            deps.retrofitConvertorGson,
+            deps.googlePlay.core,
+            deps.googlePlay.coreKtx,
+            deps.jsoup,
+            deps.streams,
+            deps.materialRefresh,
+            deps.materialDialogs.core,
+            deps.materialStyledDialogs,
+            deps.flexbox,
+            deps.ellipsizetextview,
+            deps.customactivityoncrash,
+            deps.styleabletoast,
+            deps.permissionhelper,
+            deps.expandablelayout,
+            deps.statefulLayout
+
+    implementation project(path: ':YouTubePlayer'),
+                   project(path: ':FlycoBannerLib'),
+                   project(path: ':MaterialAbout'),
+                   project(path: ':ratingdialog'),
+                   project(path: ':ChipCloud'),
+                   project(path: ':MsvSearch')
+}

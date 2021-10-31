@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:banner="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fullscreen_slider_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <kg.zima.gesvitaly.zanozakg.flycobannerimpl.FullscreenImageSlider
+        android:id="@+id/fullscreen_carousel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:gravity="center"
+        banner:bb_barColor="#88000000"
+        banner:bb_barPaddingBottom="5dp"
+        banner:bb_barPaddingLeft="10dp"
+        banner:bb_barPaddingRight="10dp"
+        banner:bb_barPaddingTop="5dp"
+        banner:bb_delay="2"
+        banner:bb_indicatorCornerRadius="3dp"
+        banner:bb_indicatorGap="8dp"
+        banner:bb_indicatorGravity="CENTER"
+        banner:bb_indicatorHeight="6dp"
+        banner:bb_indicatorSelectColor="#ffffff"
+        banner:bb_indicatorStyle="CORNER_RECTANGLE"
+        banner:bb_indicatorUnselectColor="#88ffffff"
+        banner:bb_indicatorWidth="6dp"
+        banner:bb_isAutoScrollEnable="false"
+        banner:bb_isBarShowWhenLast="true"
+        banner:bb_isIndicatorShow="true"
+        banner:bb_isLoopEnable="false"
+        banner:bb_isTitleShow="false"
+        banner:bb_period="10"
+        banner:bb_textColor="#ffffff"
+        banner:bb_textSize="13.5sp" />
+
+    <TextView
+        android:id="@+id/slider_text_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fullscreen_carousel"
+        android:layout_alignEnd="@+id/fullscreen_carousel"
+        android:layout_alignRight="@+id/fullscreen_carousel"
+        android:paddingBottom="5dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp"
+        android:textColor="@color/whitePrimary"
+        android:visibility="gone" />
+
+</RelativeLayout>

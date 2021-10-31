@@ -1,0 +1,20 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion versions.sdk.compile
+
+    defaultConfig {
+        minSdkVersion versions.sdk.min
+        targetSdkVersion versions.sdk.target
+    }
+
+    sourceSets {
+        main.res.srcDirs 'res'
+    }
+}
+
+dependencies {
+    implementation deps.androidX.appcompat
+    implementation deps.androidX.cardview
+    implementation 'com.github.jrvansuita:IconHandler:v2.0.0'
+}

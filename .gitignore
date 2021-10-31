@@ -1,0 +1,17 @@
+*.iml
+.gradle
+/local.properties
+/signingConfigs.gradle
+/apiKeys.properties
+/.idea/workspace.xml
+/.idea/libraries
+/.idea/caches
+/.idea/sonarlint
+/.idea/encodings.xml
+/.idea/jarRepositories.xml
+/.idea/compiler.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+/app/prod/

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="grey_500">#9E9E9E</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="accent">#4CAF50</color>
+    <color name="material_green">#0D9D57</color>
+    <color name="zanoza_red">#EA4940</color>
+    <color name="kaktus_green">#4CAF50</color>
+
+</resources>

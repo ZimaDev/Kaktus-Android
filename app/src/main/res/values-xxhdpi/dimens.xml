@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="google_ad_width">352px</dimen>
+    <dimen name="google_ad_height">120px</dimen>
+<!--    <dimen name="google_ad_width">400px</dimen>
+    <dimen name="google_ad_height">150px</dimen>-->
+</resources>

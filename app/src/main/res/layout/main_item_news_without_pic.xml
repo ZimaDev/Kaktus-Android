@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:colorBackground"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/news_tv"
+        android:name="TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:lineSpacingMultiplier="0.9"
+        android:textColor="?android:textColor"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@id/date_tv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Какая-то очень интересная и познавательная новость. Читать её мы, конечно же, не будем" />
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/news_tv"
+        tools:text="Сегодня" />
+
+    <ImageView
+        android:id="@+id/count_of_views_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/date_tv"
+        app:srcCompat="@drawable/ic_views"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/count_of_views_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/count_of_views_iv"
+        tools:text="200000" />
+
+    <ImageView
+        android:id="@+id/count_of_comments_iv"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:gravity="center_vertical"
+        android:paddingTop="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/count_of_views_tv"
+        app:srcCompat="@drawable/ic_comments"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/count_of_comments_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/count_of_comments_iv"
+        tools:text="666" />
+</androidx.constraintlayout.widget.ConstraintLayout>
